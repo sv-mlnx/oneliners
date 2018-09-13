@@ -1,0 +1,2 @@
+## https://shapeshed.com/unix-xargs/
+grep eth0 /proc/interrupts | cut -d ':' -f1 | xargs -I % sh -c 'cat /proc/irq/%/smp_affinity'
